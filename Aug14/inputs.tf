@@ -55,6 +55,13 @@ variable "web_sg_config" {
         cidr_block = "0.0.0.0/0"
       },
       {
+        type       = "ingress"
+        from_port  = "2200"
+        to_port    = "2200"
+        protocol   = "tcp"
+        cidr_block = "0.0.0.0/0"
+      },
+      {
         type       = "egress"
         from_port  = "0"
         to_port    = "65535"
