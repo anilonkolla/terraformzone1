@@ -1,5 +1,5 @@
 resource "aws_vpc" "vpcaws" {
-  cidr_block = "192.168.0.0/16"
+  cidr_block = var.aws_vpc_cidr
 
   tags = {
     name = "vpcaws"
@@ -70,7 +70,7 @@ resource "aws_instance" "ntier1" {
   associate_public_ip_address = true
   key_name                    = "keypair"
   subnet_id                   = aws_subnet.sub6.id
-  vpc_security_group_ids      = [aws_security_group.allow_tls.id]
+  vpc_security_group_ids      = [aws_security_group.html.id]
 
   tags = {
     name = "terraform"
