@@ -54,8 +54,3 @@ variable "app_sg_config" {
 }
 
 
-variable "public_key_path" {
-  type    = string
-  default = "C:/Users/reddy/.ssh/id_rsa.pub"
-
-}

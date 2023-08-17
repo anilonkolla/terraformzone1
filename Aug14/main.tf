@@ -56,19 +56,12 @@ resource "aws_route_table_association" "rtassociation" {
   route_table_id = aws_route_table.rt.id
 }
 
-resource "aws_key_pair" "private" {
-  key_name   = "keypair"
-  public_key = file(var.public_key_path)
-  tags = {
-    CreatedBy = "me"
-  }
-}
 
 resource "aws_instance" "ntier1" {
   ami                         = "ami-0f5ee92e2d63afc18"
   instance_type               = "t3.micro"
   associate_public_ip_address = true
-  key_name                    = "keypair"
+  key_name                    = "anil kumar"
   subnet_id                   = aws_subnet.sub6.id
   vpc_security_group_ids      = [aws_security_group.html.id]
 
