@@ -48,6 +48,13 @@ app_sg_config = {
     },
     {
       type       = "ingress"
+      from_port  = "3000"
+      to_port    = "3000"
+      protocol   = "tcp"
+      cidr_block = "0.0.0.0/0"
+    },
+    {
+      type       = "ingress"
       from_port  = "2000"
       to_port    = "2000"
       protocol   = "tcp"

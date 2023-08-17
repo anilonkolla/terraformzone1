@@ -7,9 +7,9 @@ terraform {
   }
   backend "s3" {
     bucket         = "reddy123"
-    key            = "terraform/aws"
+    key            = "terraform/reddy"
     region         = "ap-south-1"
-    dynamodb_table = "mytable"
+    dynamodb_table = "123table"
   }
 
 }
