@@ -4,15 +4,15 @@ variable "buckets" {
     region = string
   }))
   default = [{
-    name   = "matsipur"
-    region = "us-west-1"
+    name   = "terraform1"
+    region = "ap-south-1"
     },
     {
-      name   = "atmakur"
+      name   = "terraform2"
       region = "us-west-2"
     },
     {
-      name   = "jural"
+      name   = "terraform3"
       region = "us-east-2"
   }]
 }
