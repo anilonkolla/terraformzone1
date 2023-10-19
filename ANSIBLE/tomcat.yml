@@ -8,3 +8,7 @@
         name: openjdk-11-jdk
         update_cache: yes
         state: present
+   - name: Ensure group "anilreddy" exists
+     ansible.builtin.group:
+       name: anilreddy
+       state: present
