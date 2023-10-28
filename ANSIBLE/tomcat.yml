@@ -20,7 +20,7 @@
         home: /opt/tomcat
         shell: /bin/false
         state: present
-    - name: extract tomcat 10.1.4
+  - name: extract tomcat 10.1.4
       ansible.builtin.unarchive:
         src: https://www-eu.apache.org/dist/tomcat/tomcat-10/v10.1.4/bin/apache-tomcat-10.1.4.tar.gz
         remote_src: yes
