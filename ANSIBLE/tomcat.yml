@@ -27,7 +27,7 @@
         dest: /opt/tomcat
     - name: create a symbolic link
       ansible.builtin.file:
-        src: /opt/tomcat/apache-tomcat-10.1.4
+        src: /opt/tomcat/apache-tomcat-10.1.15
         dest: /opt/tomcat
         recurse: yes
         owner: tomcat
