@@ -25,10 +25,17 @@
         src: https://www-eu.apache.org/dist/tomcat/tomcat-10/v10.1.15/bin/apache-tomcat-10.1.15.tar.gz
         remote_src: yes
         dest: /opt/tomcat
-   - name: create a symbolic link
+    - name: create a symbolic link
       ansible.builtin.file:
         src: /opt/tomcat/apache-tomcat-10.1.15
         dest: /opt/tomcat/latest
         owner: tomcat
         group: tomcat
         state: link
+    - name: change permissions
+      ansible.builtin.file:
+        dest: /opt/tomcat
+        recurse: true
+        owner: tomcat
+        group: tomcat
+        state: directory
