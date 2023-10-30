@@ -29,8 +29,6 @@
       ansible.builtin.file:
         src: /opt/tomcat/apache-tomcat-10.1.15
         dest: /opt/tomcat/latest
-        owner: tomcat
-        group: tomcat
         state: link
     - name: change permissions
       ansible.builtin.file:
@@ -39,3 +37,5 @@
         owner: tomcat
         group: tomcat
         state: directory
+    - name: add execute permissions to shell files
+      ansible.builtin.command: sudo sh -c 'chmod +x /opt/tomcat/latest/bin/*.sh'
