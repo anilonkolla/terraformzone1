@@ -8,7 +8,7 @@
     group_name: tomcat
     user_home: /opt/tomcat
     user_shell: /bin/false
-    tomcat_version: "10.1.4"
+    tomcat_version: "10.1.15"
     tomcat_major_version: "10"
     tomcat_service_name: tomcat.service
   tasks:
@@ -29,7 +29,7 @@
         home: "{{user_home}}"
         shell: "{{user_shell}}"
         state: present
-    - name: extract tomcat 10.1.4
+    - name: extract tomcat 10.1.15
       ansible.builtin.unarchive:
         src: "https://www-eu.apache.org/dist/tomcat/tomcat-{{tomcat_major_version}}/v{{tomcat_version}}/bin/apache-tomcat-{{tomcat_version}}.tar.gz"
         remote_src: yes
