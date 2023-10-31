@@ -1,0 +1,12 @@
+---
+- name: create a variable
+ vars:
+   name: i love you anilreddy
+ hosts: yes
+ tasks: 
+   - name: print variable value
+     debug:
+       var: name
+   - name: print something else
+     debug:
+       var: "Hello, {{ name }}"
