@@ -3,10 +3,12 @@ localhost
 
 [ubuntu]
 172.31.3.194 name=node1
-localhost name=acn
+localhost name=acn group=none
 
 [centos]
+172.31.3.194 name=node1
 172.31.1.249
 
 [myservers]
+172.31.3.194 name=node1
 anil[01:10].an.com
