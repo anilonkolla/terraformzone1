@@ -2,8 +2,8 @@
 localhost
 
 [ubuntu]
-172.31.3.194
-localhost
+172.31.3.194 name=node1
+localhost name=acn
 
 [centos]
 172.31.1.249

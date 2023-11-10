@@ -1,7 +1,7 @@
 ---
 - name: test something
-  hosts: all
+  hosts: ubuntu
   tasks:
     - name: print something
       ansible.builtin.debug:
-        msg: soo eligant
+        var: name
