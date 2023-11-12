@@ -1,7 +1,7 @@
 [appservers]
 172.31.3.194  java_package_name=openjdk-11-jdk
 
-[appservers=vars]
+[appservers:vars]
 user_name=tomcat
 group_name=tomcat
 user_home=/opt/tomcat
