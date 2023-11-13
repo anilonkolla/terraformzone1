@@ -3,7 +3,7 @@ all:
   children:
     local:
       hosts:
-        localhost:
+       172.31.3.194:
           packages:
             - git
             - nano
