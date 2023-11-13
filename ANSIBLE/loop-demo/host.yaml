@@ -4,8 +4,5 @@ all:
     local:
       hosts:
        172.31.3.194:
-          packages:
-            - git
-            - nano
-            - net-tools
-            - tree
+         
+           
